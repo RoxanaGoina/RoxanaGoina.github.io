@@ -1,3 +1,6 @@
+layout: default
+title: Welcome to My Page!
+
 # Welcome to my page!
 This is a simple site hosted by GitHub Pages.  
 tilns links:
