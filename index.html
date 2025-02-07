@@ -25,13 +25,14 @@
       And yes, this is meant for Distributed Systems Project. Thankies 😉
     </p>
 
-    <!-- Formular pentru calcularea sumei -->
+    <!-- Formular pentru salut personalizat -->
     <div class="mt-6">
-      <input type="text" id="numbers" placeholder="Enter numbers separated by commas" class="px-4 py-2 rounded border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
-      <button onclick="sendData()" class="px-6 py-2 bg-blue-500 text-white rounded ml-4 hover:bg-blue-600">Calculate Sum</button>
+      <label for="name" class="text-xl">Enter your name:</label>
+      <input type="text" id="name" placeholder="Your name" class="px-4 py-2 rounded border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 mt-2">
+      <button onclick="sendGreeting()" class="px-6 py-2 bg-blue-500 text-white rounded ml-4 hover:bg-blue-600 mt-2">Say Hello</button>
     </div>
     
-    <div id="result" class="mt-4 text-lg font-semibold text-white"></div>
+    <div id="greeting" class="mt-4 text-lg font-semibold text-white"></div>
   </section>
 
   <section id="About" class="p-6 bg-white">
@@ -40,25 +41,24 @@
   </section>
 
   <script>
-    // Functia care trimite datele către backend
-    async function sendData() {
-      const numbersInput = document.getElementById('numbers').value;
-      const numbers = numbersInput.split(',').map(Number); // Convertim input-ul în listă de numere
-      
-      // Asigură-te că ai backend-ul corect aici (ex: backend-ul tău găzduit pe Render sau Heroku)
-      const response = await fetch('https://apiproject-1-c8ll.onrender.com/sum', { 
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ numbers: numbers })
+    // Functia care trimite numele către backend pentru a obține un salut personalizat
+    async function sendGreeting() {
+      const name = document.getElementById('name').value.trim(); // Luăm numele introdus
+
+      if (!name) {
+        document.getElementById('greeting').innerHTML = 'Please enter your name.';
+        return;
+      }
+
+      // Apelăm API-ul pentru salut personalizat
+      const response = await fetch(`https://apiproject-1-c8ll.onrender.com/greet/${name}`, { 
+        method: 'GET',
       });
 
-      // Obținem răspunsul de la server
-      const data = await response.json(); 
+      const data = await response.json(); // Obținem răspunsul de la server
 
-      // Afișăm rezultatul pe pagină
-      document.getElementById('result').innerHTML = `Sum: ${data.sum}`;
+      // Afișăm salutul pe pagină
+      document.getElementById('greeting').innerHTML = data.message;
     }
   </script>
 
