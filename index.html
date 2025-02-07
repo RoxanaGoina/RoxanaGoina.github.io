@@ -55,10 +55,11 @@
         body: JSON.stringify({ numbers: numbers })
       });
 
-      const data = await response.json(); // Răspunsul de la server
+    // Obținem răspunsul de la server
+    const data = await response.json(); 
 
-      // Afișăm rezultatul pe pagină
-      document.getElementById('result').innerHTML = `Sum: ${data.sum}`;
+    // Afișăm rezultatul pe pagină
+    document.getElementById('result').innerHTML = `Sum: ${data.sum}`;
     }
   </script>
 <section id="Projects" class="p-6 bg-gray-100">
