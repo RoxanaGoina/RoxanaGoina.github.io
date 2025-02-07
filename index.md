@@ -1,7 +1,6 @@
 ---
 layout: default
-remote_theme: pages-themes/slate@v0.2.0
-title: My GitHub Page
+title: My Github Page
 ---
 
 <header>
