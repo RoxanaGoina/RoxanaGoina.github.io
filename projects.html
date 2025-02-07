@@ -3,14 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>My Projects</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    body {
+      background-color: #181818;
+      color: #e1e1e1;
+    }
+
+    a {
+      color: #58a6ff;
+    }
+
+    header {
+      background-color: #24292f;
+    }
+
+    footer {
+      background-color: #24292f;
+    }
+
+    .hover\:underline:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
+  <header class="p-4">
     <nav>
-      <ul class="flex justify-between bg-blue-500 text-white p-4">
+      <ul class="flex justify-between text-white">
         <li><a href="index.html" class="hover:underline">Home</a></li>
         <li><a href="about.html" class="hover:underline">About</a></li>
         <li><a href="projects.html" class="hover:underline">Projects</a></li>
@@ -19,13 +41,21 @@
     </nav>
   </header>
 
-  <section class="p-6 bg-white">
-    <h2 class="text-4xl font-semibold">My Projects</h2>
-    <p class="mt-4">This is a showcase of my current projects, including both personal and professional ones.</p>
+  <section class="p-6 bg-gray-800">
+    <h2 class="text-3xl font-semibold">My Projects</h2>
+    <p class="mt-4">Explore my projects below.</p>
+    <section class="p-6 bg-white">
+  <h2 class="text-4xl font-semibold">My Projects</h2>
+  <p class="mt-4">Here are some of the projects I am working on.</p>
+- **[MindHealth : Application for monitoring mental health and detecting depression](https://github.com/RoxanaGoina/MindHealth---Application-for-monitoring-mental-health-and-detecting-depression)
+- **[Team Project (in colaboration with Nokia Romania )](https://github.com/RoxanaGoina/Nokia-Overflow)
+- **[Shop Anime Merch](https://github.com/RoxanaGoina/Shop-Anime-Merch-Aplication)
+</section>
   </section>
 
-  <footer class="p-4 bg-blue-500 text-white text-center">
+  <footer class="p-4 text-white text-center">
     <p>&copy; 2025 My GitHub Page</p>
   </footer>
+
 </body>
 </html>
