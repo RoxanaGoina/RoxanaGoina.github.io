@@ -1,3 +1,4 @@
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/slate@v0.2.0
 title: My GitHub Page
-description: A simple site with GitHub Pages
+description: A GitHub classic-styled site
+
