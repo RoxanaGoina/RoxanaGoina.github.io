@@ -34,7 +34,7 @@ title: My Github Page
   <h2 class="text-4xl font-semibold">My  main projects</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
     <div class="p-4 bg-white shadow rounded">
-      <h3 class="text-2xl font-bold">Project 1</h3>
+      <h3 class="text-2xl font-bold">Application for monitoring mental health and detecting depression</h3>
       <a href="https://github.com/RoxanaGoina/MindHealth---Application-for-monitoring-mental-health-and-detecting-depression" class="text-blue-500 hover:underline" target="_blank">Check on Github</a>
     </div>
     <div class="p-4 bg-white shadow rounded">
@@ -42,7 +42,7 @@ title: My Github Page
       <a href="https://github.com/RoxanaGoina/Nokia-Overflow" class="text-blue-500 hover:underline" target="_blank">Check on Github</a>
     </div>
     <div class="p-4 bg-white shadow rounded">
-      <h3 class="text-2xl font-bold">Project 3</h3>
+      <h3 class="text-2xl font-bold">Shop Anime Merch Aplication </h3>
       <a href="https://github.com/RoxanaGoina/Shop-Anime-Merch-Aplication" class="text-blue-500 hover:underline" target="_blank">Check on GitHub</a>
     </div>
   </div>
