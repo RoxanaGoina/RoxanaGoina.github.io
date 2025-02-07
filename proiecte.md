@@ -1,4 +1,5 @@
 
+---
 layout: default
 title: Projects
 ---
@@ -13,6 +14,11 @@ title: Projects
     </ul>
   </nav>
 </header>
+
+<section class="p-6 bg-white">
+  <h2 class="text-4xl font-semibold">My Projects</h2>
+  <p class="mt-4">Here are some of the projects I am working on.</p>
+</section>
 
 <section class="p-6 bg-white">
   <h2 class="text-4xl font-semibold">My Projects</h2>
